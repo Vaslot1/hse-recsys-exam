@@ -1,0 +1,20 @@
+{
+  "budget_seconds": 480.0,
+  "worker_stop_reserve_seconds": 5.0,
+  "budget_expired": false,
+  "worker_exit_code": 0,
+  "worker_status": {
+    "state": "finished",
+    "completed_configurations": [
+      "counts-d050",
+      "counts-d005",
+      "counts-d010",
+      "counts-d025",
+      "coverage80-d025"
+    ]
+  },
+  "elapsed_seconds": 210.344,
+  "configuration": "coverage80-d025",
+  "csv_sha256": "16dae00a24730568033467a8e09aec4dc4b63e963888b064c74277b4d48792de",
+  "status": "verified_selection_available"
+}

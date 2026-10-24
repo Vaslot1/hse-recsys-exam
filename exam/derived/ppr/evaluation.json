@@ -1,0 +1,78 @@
+{
+  "method": "personalized_pagerank",
+  "metric": "MAP@5",
+  "ground_truth": "Local qualifying-watch proxy; not asserted equivalent to Kaggle hidden labels.",
+  "empty_target_policy": "AP@5 = 0; include in the primary cohort denominator.",
+  "repeat_policy": "Previously watched programmes allowed; five distinct IDs per list.",
+  "training_match_rows": 1233106,
+  "training_users": 4833,
+  "training_programmes": 2901,
+  "candidate_programmes": 6384,
+  "zero_support_candidates": 4222,
+  "validation_match_rows": 859214,
+  "validation_match_rows_in_cohort": 300961,
+  "relevant_user_item_pairs": 162418,
+  "cold_item_relevant_pairs": 55818,
+  "cohorts": {
+    "all_users": {
+      "users": 1260,
+      "empty_target_users": 14,
+      "map_at_5": 0.7373518518518519
+    },
+    "nonempty_targets": {
+      "users": 1246,
+      "empty_target_users": 0,
+      "map_at_5": 0.7456367041198503
+    },
+    "warm_users": {
+      "users": 1250,
+      "empty_target_users": 12,
+      "map_at_5": 0.7399626666666667
+    },
+    "cold_start_users": {
+      "users": 10,
+      "empty_target_users": 2,
+      "map_at_5": 0.41100000000000003
+    }
+  },
+  "parameters": {
+    "damping": 0.85,
+    "tolerance": 1e-10,
+    "max_iterations": 200
+  },
+  "training_window": {
+    "start_inclusive": "2020-03-09T00:00:00",
+    "end_exclusive": "2020-05-18T00:00:00"
+  },
+  "validation_window": {
+    "start_inclusive": "2020-05-18T00:00:00",
+    "end_exclusive": "2020-07-27T00:00:00"
+  },
+  "graph": {
+    "nodes": 2901,
+    "undirected_edges": 2981690,
+    "directed_nonzeros": 5963380,
+    "dangling_nodes": 0,
+    "training_user_item_pairs": 573646,
+    "max_transition_row_sum_error": 6.661338147750939e-16,
+    "symmetry_error": 0.0,
+    "min_edge_weight": 1.0,
+    "max_edge_weight": 3885.0,
+    "min_positive_transition": 1.8300471786162646e-06,
+    "max_transition": 0.07692307692307693
+  },
+  "convergence": {
+    "converged_users": 1250,
+    "cold_fallback_users": 10,
+    "maximum_iterations_used": 12,
+    "maximum_fixed_point_residual": 1.161466582244058e-11,
+    "maximum_probability_mass_error": 2.353672812205332e-14,
+    "mass_tolerance": 1e-10
+  },
+  "graph_seconds": 0.914,
+  "total_seconds": 144.5,
+  "inputs": {
+    "source_directory": "D:\\Projects\\hse-recsys\\exam\\dataset-sweet-tv",
+    "matching_directory": "D:\\Projects\\hse-recsys\\exam\\derived\\matching"
+  }
+}

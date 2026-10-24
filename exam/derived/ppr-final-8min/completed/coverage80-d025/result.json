@@ -1,0 +1,43 @@
+{
+  "configuration": "coverage80-d025",
+  "damping": 0.25,
+  "restart": "coverage80_counts",
+  "parameters": {
+    "damping": 0.25,
+    "tolerance": 1e-10,
+    "max_iterations": 200
+  },
+  "map_at_5": 0.3670050705467372,
+  "auxiliary_map_at_5": 0.38814492753623187,
+  "cohorts": {
+    "all_users": 1260,
+    "at_least_five_coverage80": 1150
+  },
+  "sequence": 4,
+  "reused_completed_result": false,
+  "verified": true,
+  "csv_sha256": "16dae00a24730568033467a8e09aec4dc4b63e963888b064c74277b4d48792de",
+  "completed_at_utc": "2026-10-24T15:47:56.583333+00:00",
+  "artifacts": {
+    "diagnostics.json": "8134567e093d4dda2e645cdb617b3825316acf55ddc56032032dc9f5f803eba3",
+    "per-user.csv": "3a0886f3477d5f9c35d6641028e4f9456da6107e064ab09d0f01e3a46bbd4e14",
+    "submission.csv": "16dae00a24730568033467a8e09aec4dc4b63e963888b064c74277b4d48792de",
+    "tie-sensitivity.csv": "b2a11a12cf48ae75c1b3179072ad5b5c3ac259886b15982f5c281ff53b27593e",
+    "tie-summary.json": "5583a380e935d8eafe115cc4c8c4bebe46c1642ec3675124c76f2df1d6a6a2da",
+    "validation-predictions.csv": "41ef910cb9460e84f6a6877dc5801d73c43cbf8048dec4502f39f97f1a9cc3df"
+  },
+  "training_window": {
+    "start_inclusive": "2020-03-09T00:00:00",
+    "end_exclusive": "2020-05-18T00:00:00"
+  },
+  "graph_reused": true,
+  "fallback": "Original training distinct-user popularity, including users with no strict qualifying history.",
+  "source_sha256": {
+    "final_ppr_worker.py": "b10c15fa3089b59eacb4b013b34722f918d7b9de33b61a31e2077410cd30b971",
+    "final_ppr_experiment.py": "0ef4e7a9a866c24c23d00b3ec997d04eff02092175f5709ec7878de2cef6c9ab",
+    "ppr.py": "8ed8b7f5d0581ed9d2c356a080a825b0f8e40f44c36e13bd3843e8495eb96aef",
+    "evaluate_ppr_counts.py": "e6abd0e3c97685c238864153cb019797d887adb0503ed38f66bccafd27db1692",
+    "evaluation.py": "7b07642db8ba25ae58d4c06039548fc2714788c67e71a05bff994a600641ba70",
+    "tie_sensitivity.py": "8ef003dd2f6fd8c6f1a506f9046477514bbf9be8d01bfdd5354be08842f49527"
+  }
+}

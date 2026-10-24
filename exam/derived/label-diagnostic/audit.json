@@ -1,0 +1,175 @@
+{
+  "created_at_utc": "2026-10-24T15:00:57.555861+00:00",
+  "python_version": "3.12.10",
+  "current_labels_reproduce_saved_results": true,
+  "training_window": {
+    "start_inclusive": "2020-03-09T00:00:00",
+    "end_exclusive": "2020-05-18T00:00:00"
+  },
+  "validation_window": {
+    "start_inclusive": "2020-05-18T00:00:00",
+    "end_exclusive": "2020-07-27T00:00:00"
+  },
+  "cohorts": {
+    "all_users": 1260,
+    "at_least_five_coverage80": 1150
+  },
+  "labels": {
+    "current": {
+      "empty_users": 14,
+      "users_with_one_to_four_targets": 3,
+      "relevant_pairs": 162418
+    },
+    "coverage80_all": {
+      "empty_users": 22,
+      "users_with_one_to_four_targets": 88,
+      "relevant_pairs": 42621
+    },
+    "coverage80_top5": {
+      "empty_users": 22,
+      "users_with_one_to_four_targets": 88,
+      "relevant_pairs": 6005
+    }
+  },
+  "frequency_ties": {
+    "users_with_any_tie": 1213,
+    "users_with_tie_crossing_fifth_place": 751
+  },
+  "candidate_programmes": 6384,
+  "match_counts": {
+    "match_rows": 859214,
+    "cohort_match_rows": 300961,
+    "coverage80_match_rows": 294465,
+    "cohort_coverage80_match_rows": 93155
+  },
+  "policies": {
+    "current": "All distinct programmes in saved qualifying validation broadcast matches.",
+    "coverage80_all": "All distinct programmes with at least one broadcast satisfying 5*overlap >= 4*full_duration.",
+    "coverage80_top5": "Up to five programmes sorted by descending number of 80%-qualified broadcasts, then ascending numeric ID.",
+    "fragmented_views": "Use saved union overlap per user/channel/broadcast. Disjoint visits to one airing accumulate; overlapping/duplicate views do not multiply seconds. One qualifying airing contributes one frequency count.",
+    "broadcast_identity": "user_id, channel_id, tv_show_id, broadcast_start, broadcast_end. Repeated airings count separately, including different channels. Duplicate saved keys are rejected, never summed.",
+    "coverage_denominator": "Full broadcast duration, including for boundary-crossing airings; numerator is union overlap clipped to validation. Saved quarantine and schedule-conflict exclusions remain in force.",
+    "frequency_ties": "Deterministic ascending exact numeric programme ID. Report any frequency tie and separately ties straddling ranks five/six. This tie-break is a local assumption.",
+    "auxiliary_cohort": "One fixed cohort of users with at least five distinct coverage80_all programmes, reused for every method and label definition.",
+    "empty_targets": "AP@5=0; include in all 1260 users. Never pad targets. With 1-4 targets divide AP by target count; with >=5 divide by 5. An empty auxiliary cohort has MAP=null.",
+    "metric": "Existing binary MAP@5; target frequency determines membership, not graded relevance or exact-position matching.",
+    "limitations": "Diagnostic proxy for the user-supplied competition description. Hidden fragmentation/count/tie conventions are unverified; this does not reproduce hidden labels. No new rankings, model fitting, validation-profile updates or Kaggle actions."
+  },
+  "models": {
+    "popularity": {
+      "directory": "D:\\Projects\\hse-recsys\\exam\\derived\\popularity",
+      "parameters": null
+    },
+    "als_tuned": {
+      "directory": "D:\\Projects\\hse-recsys\\exam\\derived\\als-tuning\\als-06",
+      "parameters": {
+        "factors": 32,
+        "iterations": 15,
+        "alpha": 1.0,
+        "regularization": 10.0,
+        "seed": 42,
+        "confidence_weighting": "binary"
+      }
+    },
+    "ppr_085": {
+      "directory": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr",
+      "parameters": {
+        "damping": 0.85,
+        "tolerance": 1e-10,
+        "max_iterations": 200
+      }
+    },
+    "ppr_050": {
+      "directory": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr-damping-050",
+      "parameters": {
+        "damping": 0.5,
+        "tolerance": 1e-10,
+        "max_iterations": 200
+      }
+    }
+  },
+  "inputs": [
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\dataset-sweet-tv\\submission.csv",
+      "sha256": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\matching\\data-quality.json",
+      "sha256": "28cb1dbd99a812a9132835eb763b1e71cab7681eaebd57c70377c13ec442ab56"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\matching\\validation-matches.csv",
+      "sha256": "0e19dcdd38376d1ed2fabbb275e10c093411d1301a25d965f0cf13e712fbfbfa"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\popularity\\evaluation.json",
+      "sha256": "df0794fcfd630ebe05540dd58339f7b0295f94c21f600da41f78bb2ae0f5b63b"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\popularity\\validation-predictions.csv",
+      "sha256": "b93c6be89daedf39cbc33bbf739f670b59d7d3fbe4ad040568832464e42dd854"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\popularity\\candidate-popularity.csv",
+      "sha256": "f0b299893254a352429f914fb0a995f98852593600829fe9e262bf0cbf89b328"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\popularity\\per-user.csv",
+      "sha256": "e927d8f567eaf286fac96e6557446aa5353377424414ef229632bbaeaa516a52"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\als-tuning\\als-06\\evaluation.json",
+      "sha256": "7539ac468e76ae84b782a7ac75ff402fbc75d58d356fc0e45466ac3de30342ce"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\als-tuning\\als-06\\validation-predictions.csv",
+      "sha256": "77ae5d6f7c20f4528ebf2431afc5c60e9082bfb58acbf478ebfa1bfad8b583f1"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\als-tuning\\als-06\\candidate-popularity.csv",
+      "sha256": "f0b299893254a352429f914fb0a995f98852593600829fe9e262bf0cbf89b328"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\als-tuning\\als-06\\per-user.csv",
+      "sha256": "1bc1d120028381f7aa6ee09f27bbf8c1007fa7e35e8340695c1f51d6a7be0a66"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr\\evaluation.json",
+      "sha256": "33efa49b79c89ad7ecc896bc79503741621757b375bdedf8d62ff903cc7b3b59"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr\\validation-predictions.csv",
+      "sha256": "c5b88d1c1e74607a8b3fb3c87534164a15eca9cf341a7c0c194e9a9fa48de606"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr\\candidate-popularity.csv",
+      "sha256": "f0b299893254a352429f914fb0a995f98852593600829fe9e262bf0cbf89b328"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr\\per-user.csv",
+      "sha256": "03f7ed0ad48fd6452b997a192a2b3d6dffd4b566f4cb6f625b9e51ea4c61d057"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr-damping-050\\evaluation.json",
+      "sha256": "6d68d42bade6489e41cc9b26fa45bc961721bca8cddf75d860dda974997e4dd3"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr-damping-050\\validation-predictions.csv",
+      "sha256": "a9359c6a1cd7e6c06a5376b2031f1ae2f388cfeb7484d8cf3180c9b2a2eea0f3"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr-damping-050\\candidate-popularity.csv",
+      "sha256": "f0b299893254a352429f914fb0a995f98852593600829fe9e262bf0cbf89b328"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr-damping-050\\per-user.csv",
+      "sha256": "acae4282e173d96e4ead53f504a6a42e3b3071a4708fff03386dc4a7302a2290"
+    }
+  ],
+  "source_sha256": {
+    "diagnose_labels.py": "566682d459007a0eb7b8577c21f1d609645174f4763f5da271816d52697abdd9",
+    "evaluation.py": "7b07642db8ba25ae58d4c06039548fc2714788c67e71a05bff994a600641ba70"
+  },
+  "elapsed_seconds": 23.425,
+  "input_hashes_unchanged": true
+}

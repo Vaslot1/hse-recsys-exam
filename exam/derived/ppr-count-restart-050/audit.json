@@ -1,0 +1,194 @@
+{
+  "created_at_utc": "2026-10-24T15:16:02.874270+00:00",
+  "parameters": {
+    "damping": 0.5,
+    "tolerance": 1e-10,
+    "max_iterations": 200
+  },
+  "batch_size": 32,
+  "restart_weighting": "watch_counts",
+  "restart_definition": "s_ui = number of original qualifying training broadcasts for (u,i) / total qualifying broadcasts for u. No 80% filter applied to training.",
+  "training_watch_threshold": "O >= min(300 seconds, 0.5 * full broadcast duration); saved original union/conflict/quarantine conventions retained.",
+  "training_window": {
+    "start_inclusive": "2020-03-09T00:00:00",
+    "end_exclusive": "2020-05-18T00:00:00"
+  },
+  "validation_window": {
+    "start_inclusive": "2020-05-18T00:00:00",
+    "end_exclusive": "2020-07-27T00:00:00"
+  },
+  "saved_graph_reused": true,
+  "graph_directory": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr-damping-050",
+  "graph_nodes": 2901,
+  "graph_directed_edges": 5963380,
+  "training_users": 4833,
+  "training_match_rows": 1233106,
+  "frozen_comparator_scores_reproduced": true,
+  "canonical_targets": "Saved coverage80_top5 diagnostic targets with numeric-ID frequency ties.",
+  "cohorts": {
+    "all_users": 1260,
+    "at_least_five_coverage80": 1150
+  },
+  "candidate_programmes": 6384,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "sampling_policy": "Seeds 0..19; per-user Python Random seeded by big-endian SHA-256 integer of UTF-8 ppr-tie-sensitivity-v1|seed|user_id; sample without replacement from numeric-ID-sorted fifth-frequency tie. Targets shared across all methods.",
+  "sensitivity_interpretation": "Empirical sensitivity to 20 seeded cutoff-tie resolutions, shared across methods. Sample min/max are not exact bounds; sample SD is not a confidence interval. No claim to reproduce the hidden Kaggle tie-break; no seed or resolution is selected for performance.",
+  "convergence": {
+    "converged_users": 1250,
+    "cold_fallback_users": 10,
+    "maximum_iterations_used": 10,
+    "maximum_fixed_point_residual": 6.8287434139768795e-12,
+    "maximum_probability_mass_error": 2.731148640577885e-14,
+    "mass_tolerance": 1e-10
+  },
+  "inputs": [
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\dataset-sweet-tv\\submission.csv",
+      "sha256": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\matching\\data-quality.json",
+      "sha256": "28cb1dbd99a812a9132835eb763b1e71cab7681eaebd57c70377c13ec442ab56"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\matching\\validation-matches.csv",
+      "sha256": "0e19dcdd38376d1ed2fabbb275e10c093411d1301a25d965f0cf13e712fbfbfa"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\popularity\\evaluation.json",
+      "sha256": "df0794fcfd630ebe05540dd58339f7b0295f94c21f600da41f78bb2ae0f5b63b"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\popularity\\validation-predictions.csv",
+      "sha256": "b93c6be89daedf39cbc33bbf739f670b59d7d3fbe4ad040568832464e42dd854"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\popularity\\candidate-popularity.csv",
+      "sha256": "f0b299893254a352429f914fb0a995f98852593600829fe9e262bf0cbf89b328"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\popularity\\per-user.csv",
+      "sha256": "e927d8f567eaf286fac96e6557446aa5353377424414ef229632bbaeaa516a52"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\als-tuning\\als-06\\evaluation.json",
+      "sha256": "7539ac468e76ae84b782a7ac75ff402fbc75d58d356fc0e45466ac3de30342ce"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\als-tuning\\als-06\\validation-predictions.csv",
+      "sha256": "77ae5d6f7c20f4528ebf2431afc5c60e9082bfb58acbf478ebfa1bfad8b583f1"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\als-tuning\\als-06\\candidate-popularity.csv",
+      "sha256": "f0b299893254a352429f914fb0a995f98852593600829fe9e262bf0cbf89b328"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\als-tuning\\als-06\\per-user.csv",
+      "sha256": "1bc1d120028381f7aa6ee09f27bbf8c1007fa7e35e8340695c1f51d6a7be0a66"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr\\evaluation.json",
+      "sha256": "33efa49b79c89ad7ecc896bc79503741621757b375bdedf8d62ff903cc7b3b59"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr\\validation-predictions.csv",
+      "sha256": "c5b88d1c1e74607a8b3fb3c87534164a15eca9cf341a7c0c194e9a9fa48de606"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr\\candidate-popularity.csv",
+      "sha256": "f0b299893254a352429f914fb0a995f98852593600829fe9e262bf0cbf89b328"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr\\per-user.csv",
+      "sha256": "03f7ed0ad48fd6452b997a192a2b3d6dffd4b566f4cb6f625b9e51ea4c61d057"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr-damping-050\\evaluation.json",
+      "sha256": "6d68d42bade6489e41cc9b26fa45bc961721bca8cddf75d860dda974997e4dd3"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr-damping-050\\validation-predictions.csv",
+      "sha256": "a9359c6a1cd7e6c06a5376b2031f1ae2f388cfeb7484d8cf3180c9b2a2eea0f3"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr-damping-050\\candidate-popularity.csv",
+      "sha256": "f0b299893254a352429f914fb0a995f98852593600829fe9e262bf0cbf89b328"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr-damping-050\\per-user.csv",
+      "sha256": "acae4282e173d96e4ead53f504a6a42e3b3071a4708fff03386dc4a7302a2290"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\matching\\train-matches.csv",
+      "sha256": "8de21ad939c0bfb5cf014a25b24572f8b317d159eeec35392b3a2bd3b5338107"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\label-diagnostic\\audit.json",
+      "sha256": "ef8df3ec344916a4b930c75dda25f155927e8f66f406d6d5a07333bf8a894191"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\label-diagnostic\\comparison.json",
+      "sha256": "fe02123e98f9cb7f2fbf64d6ee1dca1b13f332fd0774e19daa2557a33ddc430a"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\label-diagnostic\\labels.csv",
+      "sha256": "a37c640c6c663a1f6a0e53ef7188d2bee40ebe2c4046288f072a8606db5789db"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\label-diagnostic\\qualifying-frequencies.csv",
+      "sha256": "a756e9ae35f1ff297d15866d25a7437018e67ef1ca27c691efbfdae0f66953fb"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr-damping-050\\graph.json",
+      "sha256": "79f39a8a638566513e8ce5fed6a53b68c334cd8d1116eb820fb1da6cce46b417"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr-damping-050\\graph-items.csv",
+      "sha256": "b86fe2adfdbfc3969c251862c46d49ddb6c17645f6f090187925e485f1372245"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr-damping-050\\graph.npz",
+      "sha256": "830b56159b0cb9d196904675d8c3598ba6d85e47692649edb2a73695d1dbed77"
+    },
+    {
+      "path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr-damping-050\\transition.npz",
+      "sha256": "1f524262791dc54c00965257a43a6244d83b1b2047cbf5fbe9b0ef7c38a64df2"
+    }
+  ],
+  "source_sha256": {
+    "evaluate_ppr_counts.py": "e6abd0e3c97685c238864153cb019797d887adb0503ed38f66bccafd27db1692",
+    "tie_sensitivity.py": "8ef003dd2f6fd8c6f1a506f9046477514bbf9be8d01bfdd5354be08842f49527",
+    "ppr.py": "8ed8b7f5d0581ed9d2c356a080a825b0f8e40f44c36e13bd3843e8495eb96aef",
+    "als.py": "22871ba518e7b7dcf4bb4d3785fb335c190deaf5949388016b43df4adc68b459",
+    "diagnose_labels.py": "566682d459007a0eb7b8577c21f1d609645174f4763f5da271816d52697abdd9",
+    "evaluation.py": "7b07642db8ba25ae58d4c06039548fc2714788c67e71a05bff994a600641ba70",
+    "generate_kaggle.py": "7664b84d0a5def5fcf11bd7092338446bd12bd486d0544c111c161c5c8354e18"
+  },
+  "provenance_limit": "Hashes and consistency checks bind this run to files now present, not to unauthenticated raw viewing attribution or an independently reconstructed historical graph.",
+  "python_version": "3.12.10",
+  "numpy_version": "2.4.2",
+  "scipy_version": "1.17.1",
+  "elapsed_seconds": 113.749,
+  "input_hashes_unchanged": true
+}

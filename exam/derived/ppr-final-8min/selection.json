@@ -1,0 +1,270 @@
+{
+  "configuration": "coverage80-d025",
+  "damping": 0.25,
+  "restart": "coverage80_counts",
+  "parameters": {
+    "damping": 0.25,
+    "tolerance": 1e-10,
+    "max_iterations": 200
+  },
+  "map_at_5": 0.3670050705467372,
+  "auxiliary_map_at_5": 0.38814492753623187,
+  "cohorts": {
+    "all_users": 1260,
+    "at_least_five_coverage80": 1150
+  },
+  "sequence": 4,
+  "reused_completed_result": false,
+  "verified": true,
+  "csv_sha256": "16dae00a24730568033467a8e09aec4dc4b63e963888b064c74277b4d48792de",
+  "completed_at_utc": "2026-10-24T15:47:56.583333+00:00",
+  "artifacts": {
+    "diagnostics.json": "8134567e093d4dda2e645cdb617b3825316acf55ddc56032032dc9f5f803eba3",
+    "per-user.csv": "3a0886f3477d5f9c35d6641028e4f9456da6107e064ab09d0f01e3a46bbd4e14",
+    "submission.csv": "16dae00a24730568033467a8e09aec4dc4b63e963888b064c74277b4d48792de",
+    "tie-sensitivity.csv": "b2a11a12cf48ae75c1b3179072ad5b5c3ac259886b15982f5c281ff53b27593e",
+    "tie-summary.json": "5583a380e935d8eafe115cc4c8c4bebe46c1642ec3675124c76f2df1d6a6a2da",
+    "validation-predictions.csv": "41ef910cb9460e84f6a6877dc5801d73c43cbf8048dec4502f39f97f1a9cc3df"
+  },
+  "training_window": {
+    "start_inclusive": "2020-03-09T00:00:00",
+    "end_exclusive": "2020-05-18T00:00:00"
+  },
+  "graph_reused": true,
+  "fallback": "Original training distinct-user popularity, including users with no strict qualifying history.",
+  "source_sha256": {
+    "final_ppr_worker.py": "b10c15fa3089b59eacb4b013b34722f918d7b9de33b61a31e2077410cd30b971",
+    "final_ppr_experiment.py": "0ef4e7a9a866c24c23d00b3ec997d04eff02092175f5709ec7878de2cef6c9ab",
+    "ppr.py": "8ed8b7f5d0581ed9d2c356a080a825b0f8e40f44c36e13bd3843e8495eb96aef",
+    "evaluate_ppr_counts.py": "e6abd0e3c97685c238864153cb019797d887adb0503ed38f66bccafd27db1692",
+    "evaluation.py": "7b07642db8ba25ae58d4c06039548fc2714788c67e71a05bff994a600641ba70",
+    "tie_sensitivity.py": "8ef003dd2f6fd8c6f1a506f9046477514bbf9be8d01bfdd5354be08842f49527"
+  },
+  "status": "selected_verified_configuration",
+  "completed_configurations": [
+    "counts-d050",
+    "counts-d005",
+    "counts-d010",
+    "counts-d025",
+    "coverage80-d025"
+  ],
+  "completed_results": [
+    {
+      "configuration": "counts-d050",
+      "damping": 0.5,
+      "restart": "all_counts",
+      "parameters": {
+        "damping": 0.5,
+        "tolerance": 1e-10,
+        "max_iterations": 200
+      },
+      "map_at_5": 0.34712037037037036,
+      "auxiliary_map_at_5": 0.3676057971014493,
+      "cohorts": {
+        "all_users": 1260,
+        "at_least_five_coverage80": 1150
+      },
+      "sequence": 0,
+      "reused_completed_result": true,
+      "verified": true,
+      "csv_sha256": "904198008591ba560a69166dca9c0585d8fcadbd536afdd1b0cdc27c5bd36380",
+      "completed_at_utc": "2026-10-24T15:44:35.369377+00:00",
+      "artifacts": {
+        "diagnostics.json": "3b80b2a4b53c042e0265c1b1974a908593e257216316daacdc2cc78f12eca3bd",
+        "per-user.csv": "e7d5fc30569f30e1bf88319486977623c0b2157121fb978bd0940402b448d34d",
+        "submission.csv": "904198008591ba560a69166dca9c0585d8fcadbd536afdd1b0cdc27c5bd36380",
+        "tie-sensitivity.csv": "54210130ef6cf45e0df98345f88d048caf20557d2db7ca2aed4b7429cee10210",
+        "tie-summary.json": "2896f048bb841b3bb27cf35df9fdde976c81be4e52d5f046e77704924e5596f5",
+        "validation-predictions.csv": "9a6e3831733aa322ccbe8dd7de2a744de07521fb9f1c284ebc448dc855db8d35"
+      },
+      "training_window": {
+        "start_inclusive": "2020-03-09T00:00:00",
+        "end_exclusive": "2020-05-18T00:00:00"
+      },
+      "graph_reused": true,
+      "fallback": "Original training distinct-user popularity, including users with no strict qualifying history.",
+      "source_sha256": {
+        "final_ppr_worker.py": "b10c15fa3089b59eacb4b013b34722f918d7b9de33b61a31e2077410cd30b971",
+        "final_ppr_experiment.py": "0ef4e7a9a866c24c23d00b3ec997d04eff02092175f5709ec7878de2cef6c9ab",
+        "ppr.py": "8ed8b7f5d0581ed9d2c356a080a825b0f8e40f44c36e13bd3843e8495eb96aef",
+        "evaluate_ppr_counts.py": "e6abd0e3c97685c238864153cb019797d887adb0503ed38f66bccafd27db1692",
+        "evaluation.py": "7b07642db8ba25ae58d4c06039548fc2714788c67e71a05bff994a600641ba70",
+        "tie_sensitivity.py": "8ef003dd2f6fd8c6f1a506f9046477514bbf9be8d01bfdd5354be08842f49527"
+      }
+    },
+    {
+      "configuration": "counts-d005",
+      "damping": 0.05,
+      "restart": "all_counts",
+      "parameters": {
+        "damping": 0.05,
+        "tolerance": 1e-10,
+        "max_iterations": 200
+      },
+      "map_at_5": 0.3471741622574956,
+      "auxiliary_map_at_5": 0.3675536231884058,
+      "cohorts": {
+        "all_users": 1260,
+        "at_least_five_coverage80": 1150
+      },
+      "sequence": 1,
+      "reused_completed_result": false,
+      "verified": true,
+      "csv_sha256": "2e1ad9e777c796406bb265830a5c22aaf39fbd8b188b74bbb26cefb9d3431618",
+      "completed_at_utc": "2026-10-24T15:46:06.122819+00:00",
+      "artifacts": {
+        "diagnostics.json": "3c3fc9ca5fab6d1cd0995384c70eb734c5c0b62ca48e06c6068df7a33e18305a",
+        "per-user.csv": "5682aafce076fd447b8264572ea52469d0af6bdd55cf26b10c9c0ecebcb8c3a9",
+        "submission.csv": "2e1ad9e777c796406bb265830a5c22aaf39fbd8b188b74bbb26cefb9d3431618",
+        "tie-sensitivity.csv": "f1c880a226d423a1ae2feaeb79aa85bfa620c9de470c498553342739c8612a2c",
+        "tie-summary.json": "237866516b54b75162cd4c03923787db44af609fcff5e59b1289519d1d15935d",
+        "validation-predictions.csv": "bf507dafbe8ccee0c886dbabd8ea0e9b2f623b727ed0f002cba08866ebdeec46"
+      },
+      "training_window": {
+        "start_inclusive": "2020-03-09T00:00:00",
+        "end_exclusive": "2020-05-18T00:00:00"
+      },
+      "graph_reused": true,
+      "fallback": "Original training distinct-user popularity, including users with no strict qualifying history.",
+      "source_sha256": {
+        "final_ppr_worker.py": "b10c15fa3089b59eacb4b013b34722f918d7b9de33b61a31e2077410cd30b971",
+        "final_ppr_experiment.py": "0ef4e7a9a866c24c23d00b3ec997d04eff02092175f5709ec7878de2cef6c9ab",
+        "ppr.py": "8ed8b7f5d0581ed9d2c356a080a825b0f8e40f44c36e13bd3843e8495eb96aef",
+        "evaluate_ppr_counts.py": "e6abd0e3c97685c238864153cb019797d887adb0503ed38f66bccafd27db1692",
+        "evaluation.py": "7b07642db8ba25ae58d4c06039548fc2714788c67e71a05bff994a600641ba70",
+        "tie_sensitivity.py": "8ef003dd2f6fd8c6f1a506f9046477514bbf9be8d01bfdd5354be08842f49527"
+      }
+    },
+    {
+      "configuration": "counts-d010",
+      "damping": 0.1,
+      "restart": "all_counts",
+      "parameters": {
+        "damping": 0.1,
+        "tolerance": 1e-10,
+        "max_iterations": 200
+      },
+      "map_at_5": 0.34715828924162256,
+      "auxiliary_map_at_5": 0.367536231884058,
+      "cohorts": {
+        "all_users": 1260,
+        "at_least_five_coverage80": 1150
+      },
+      "sequence": 2,
+      "reused_completed_result": false,
+      "verified": true,
+      "csv_sha256": "b35aa9a32548429697883f3605df766f4b389923be3f3a72d6d9f8a8b264c724",
+      "completed_at_utc": "2026-10-24T15:46:38.629405+00:00",
+      "artifacts": {
+        "diagnostics.json": "324990d594ece87816c964f4b3c9c749db3c57178f52220a5ac1ffe8a1c7f8bf",
+        "per-user.csv": "c388065dfaab60b7779464dad3ff3a6e0048f287a771a3df61d421e492c2f74d",
+        "submission.csv": "b35aa9a32548429697883f3605df766f4b389923be3f3a72d6d9f8a8b264c724",
+        "tie-sensitivity.csv": "9b5bb0592ab134c3cd611dc5a143445d452931ff8d65233c8373b9215bb43ea4",
+        "tie-summary.json": "342ef3d7589d12b3cc2e8e723c193aa861721db2f2713bd14887f2bf524204d5",
+        "validation-predictions.csv": "c9c50633adc72a1b775e34b4396b84771c2ccdc24658e72d2dff30e2bedd7833"
+      },
+      "training_window": {
+        "start_inclusive": "2020-03-09T00:00:00",
+        "end_exclusive": "2020-05-18T00:00:00"
+      },
+      "graph_reused": true,
+      "fallback": "Original training distinct-user popularity, including users with no strict qualifying history.",
+      "source_sha256": {
+        "final_ppr_worker.py": "b10c15fa3089b59eacb4b013b34722f918d7b9de33b61a31e2077410cd30b971",
+        "final_ppr_experiment.py": "0ef4e7a9a866c24c23d00b3ec997d04eff02092175f5709ec7878de2cef6c9ab",
+        "ppr.py": "8ed8b7f5d0581ed9d2c356a080a825b0f8e40f44c36e13bd3843e8495eb96aef",
+        "evaluate_ppr_counts.py": "e6abd0e3c97685c238864153cb019797d887adb0503ed38f66bccafd27db1692",
+        "evaluation.py": "7b07642db8ba25ae58d4c06039548fc2714788c67e71a05bff994a600641ba70",
+        "tie_sensitivity.py": "8ef003dd2f6fd8c6f1a506f9046477514bbf9be8d01bfdd5354be08842f49527"
+      }
+    },
+    {
+      "configuration": "counts-d025",
+      "damping": 0.25,
+      "restart": "all_counts",
+      "parameters": {
+        "damping": 0.25,
+        "tolerance": 1e-10,
+        "max_iterations": 200
+      },
+      "map_at_5": 0.3471794532627866,
+      "auxiliary_map_at_5": 0.36770434782608696,
+      "cohorts": {
+        "all_users": 1260,
+        "at_least_five_coverage80": 1150
+      },
+      "sequence": 3,
+      "reused_completed_result": false,
+      "verified": true,
+      "csv_sha256": "490749093f12d2780347ec62e2b478352059d87ad014b633c57170b566e6ad25",
+      "completed_at_utc": "2026-10-24T15:47:16.079194+00:00",
+      "artifacts": {
+        "diagnostics.json": "f258ca3fa08bbc8a3a69b0982a61ff9c3e141942bfb61507a21dd1a4b15cfd8d",
+        "per-user.csv": "8c9c4bc09b9b998b6d00fa3c79f6846543ec35e7571971c0c699eab5fdb1ec50",
+        "submission.csv": "490749093f12d2780347ec62e2b478352059d87ad014b633c57170b566e6ad25",
+        "tie-sensitivity.csv": "c57db7db77808f910d2a3c09f98c13988ac303b810132fcd1732f6ea5bb3a769",
+        "tie-summary.json": "31fff8cef71c10f2bfb187094b081080277b29eb3d863ed9236c8c7dd6b3744d",
+        "validation-predictions.csv": "8085be6600156cf29ec3965f53c9e911950935b9875d50d08f02490ea4c38309"
+      },
+      "training_window": {
+        "start_inclusive": "2020-03-09T00:00:00",
+        "end_exclusive": "2020-05-18T00:00:00"
+      },
+      "graph_reused": true,
+      "fallback": "Original training distinct-user popularity, including users with no strict qualifying history.",
+      "source_sha256": {
+        "final_ppr_worker.py": "b10c15fa3089b59eacb4b013b34722f918d7b9de33b61a31e2077410cd30b971",
+        "final_ppr_experiment.py": "0ef4e7a9a866c24c23d00b3ec997d04eff02092175f5709ec7878de2cef6c9ab",
+        "ppr.py": "8ed8b7f5d0581ed9d2c356a080a825b0f8e40f44c36e13bd3843e8495eb96aef",
+        "evaluate_ppr_counts.py": "e6abd0e3c97685c238864153cb019797d887adb0503ed38f66bccafd27db1692",
+        "evaluation.py": "7b07642db8ba25ae58d4c06039548fc2714788c67e71a05bff994a600641ba70",
+        "tie_sensitivity.py": "8ef003dd2f6fd8c6f1a506f9046477514bbf9be8d01bfdd5354be08842f49527"
+      }
+    },
+    {
+      "configuration": "coverage80-d025",
+      "damping": 0.25,
+      "restart": "coverage80_counts",
+      "parameters": {
+        "damping": 0.25,
+        "tolerance": 1e-10,
+        "max_iterations": 200
+      },
+      "map_at_5": 0.3670050705467372,
+      "auxiliary_map_at_5": 0.38814492753623187,
+      "cohorts": {
+        "all_users": 1260,
+        "at_least_five_coverage80": 1150
+      },
+      "sequence": 4,
+      "reused_completed_result": false,
+      "verified": true,
+      "csv_sha256": "16dae00a24730568033467a8e09aec4dc4b63e963888b064c74277b4d48792de",
+      "completed_at_utc": "2026-10-24T15:47:56.583333+00:00",
+      "artifacts": {
+        "diagnostics.json": "8134567e093d4dda2e645cdb617b3825316acf55ddc56032032dc9f5f803eba3",
+        "per-user.csv": "3a0886f3477d5f9c35d6641028e4f9456da6107e064ab09d0f01e3a46bbd4e14",
+        "submission.csv": "16dae00a24730568033467a8e09aec4dc4b63e963888b064c74277b4d48792de",
+        "tie-sensitivity.csv": "b2a11a12cf48ae75c1b3179072ad5b5c3ac259886b15982f5c281ff53b27593e",
+        "tie-summary.json": "5583a380e935d8eafe115cc4c8c4bebe46c1642ec3675124c76f2df1d6a6a2da",
+        "validation-predictions.csv": "41ef910cb9460e84f6a6877dc5801d73c43cbf8048dec4502f39f97f1a9cc3df"
+      },
+      "training_window": {
+        "start_inclusive": "2020-03-09T00:00:00",
+        "end_exclusive": "2020-05-18T00:00:00"
+      },
+      "graph_reused": true,
+      "fallback": "Original training distinct-user popularity, including users with no strict qualifying history.",
+      "source_sha256": {
+        "final_ppr_worker.py": "b10c15fa3089b59eacb4b013b34722f918d7b9de33b61a31e2077410cd30b971",
+        "final_ppr_experiment.py": "0ef4e7a9a866c24c23d00b3ec997d04eff02092175f5709ec7878de2cef6c9ab",
+        "ppr.py": "8ed8b7f5d0581ed9d2c356a080a825b0f8e40f44c36e13bd3843e8495eb96aef",
+        "evaluate_ppr_counts.py": "e6abd0e3c97685c238864153cb019797d887adb0503ed38f66bccafd27db1692",
+        "evaluation.py": "7b07642db8ba25ae58d4c06039548fc2714788c67e71a05bff994a600641ba70",
+        "tie_sensitivity.py": "8ef003dd2f6fd8c6f1a506f9046477514bbf9be8d01bfdd5354be08842f49527"
+      }
+    }
+  ],
+  "selection_rule": "Highest full-cohort frozen-target MAP; exact ties keep earlier completed configuration. Sensitivity never selects the winner.",
+  "submission_path": "D:\\Projects\\hse-recsys\\exam\\derived\\ppr-final-8min\\completed\\coverage80-d025\\submission.csv"
+}

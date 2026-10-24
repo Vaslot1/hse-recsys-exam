@@ -1,0 +1,7 @@
+{
+  "converged_users": 1242,
+  "cold_fallback_users": 18,
+  "max_iterations": 8,
+  "max_residual": 3.406036896451254e-12,
+  "max_mass_error": 2.9531932455029164e-14
+}

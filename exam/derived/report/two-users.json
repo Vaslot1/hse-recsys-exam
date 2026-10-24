@@ -1,0 +1,913 @@
+[
+  {
+    "history": {
+      "user_id": "12383257635753044631",
+      "training_broadcasts": 28,
+      "training_distinct_programmes": 13,
+      "validation_distinct_programmes": 19,
+      "training_category_broadcasts": {
+        "Детям": 21,
+        "Фильмы": 4,
+        "Сериалы": 3
+      },
+      "history_top": [
+        {
+          "programme_id": "12001682",
+          "title": "М/с 'Губка Боб Квадратные Штаны'.",
+          "category": "Детям",
+          "qualifying_broadcasts": 9,
+          "overlap_minutes": 138.61666666666667,
+          "validation_hit": true
+        },
+        {
+          "programme_id": "12002856",
+          "title": "М/с 'Элвиннн!!! и бурундуки'.",
+          "category": "Детям",
+          "qualifying_broadcasts": 5,
+          "overlap_minutes": 55.15,
+          "validation_hit": true
+        },
+        {
+          "programme_id": "10001261",
+          "title": "Т/с 'Мыслить как преступник'.",
+          "category": "Сериалы",
+          "qualifying_broadcasts": 2,
+          "overlap_minutes": 55.483333333333334,
+          "validation_hit": true
+        },
+        {
+          "programme_id": "12002753",
+          "title": "М/с 'Санджей и Крейг'.",
+          "category": "Детям",
+          "qualifying_broadcasts": 2,
+          "overlap_minutes": 39.8,
+          "validation_hit": true
+        },
+        {
+          "programme_id": "12002771",
+          "title": "М/с 'Черепашки-ниндзя'.",
+          "category": "Детям",
+          "qualifying_broadcasts": 2,
+          "overlap_minutes": 45.95,
+          "validation_hit": false
+        },
+        {
+          "programme_id": "1000384",
+          "title": "Т/с 'Чисто английские убийства'.",
+          "category": "Сериалы",
+          "qualifying_broadcasts": 1,
+          "overlap_minutes": 12.1,
+          "validation_hit": false
+        },
+        {
+          "programme_id": "12001697",
+          "title": "М/с 'Аватар: Легенда об Аанге'.",
+          "category": "Детям",
+          "qualifying_broadcasts": 1,
+          "overlap_minutes": 17.033333333333335,
+          "validation_hit": true
+        },
+        {
+          "programme_id": "12001734",
+          "title": "М/с 'Волшебные покровители'.",
+          "category": "Детям",
+          "qualifying_broadcasts": 1,
+          "overlap_minutes": 14.766666666666667,
+          "validation_hit": true
+        }
+      ],
+      "methods": {
+        "popularity": {
+          "ap_at_5": 0.0,
+          "hits_at_5": 0,
+          "recommendations": [
+            {
+              "rank": 1,
+              "programme_id": "2400480",
+              "title": "ТСН.",
+              "category": "Инфо",
+              "score": 4362,
+              "validation_hit": false,
+              "training_broadcasts": 0,
+              "title_category_variants": 4
+            },
+            {
+              "rank": 2,
+              "programme_id": "240081",
+              "title": "Факты.",
+              "category": "Инфо",
+              "score": 4073,
+              "validation_hit": false,
+              "training_broadcasts": 0,
+              "title_category_variants": 4
+            },
+            {
+              "rank": 3,
+              "programme_id": "6500479",
+              "title": "'Мир наизнанку'.",
+              "category": "Познавательное",
+              "score": 3610,
+              "validation_hit": false,
+              "training_broadcasts": 0,
+              "title_category_variants": 64
+            },
+            {
+              "rank": 4,
+              "programme_id": "2400508",
+              "title": "Сегодня.",
+              "category": "Инфо",
+              "score": 3608,
+              "validation_hit": false,
+              "training_broadcasts": 0,
+              "title_category_variants": 2
+            },
+            {
+              "rank": 5,
+              "programme_id": "2400467",
+              "title": "'Викна-Новости'.",
+              "category": "Инфо",
+              "score": 3538,
+              "validation_hit": false,
+              "training_broadcasts": 0,
+              "title_category_variants": 1
+            }
+          ]
+        },
+        "tuned_als": {
+          "ap_at_5": 0.76,
+          "hits_at_5": 4,
+          "recommendations": [
+            {
+              "rank": 1,
+              "programme_id": "12001682",
+              "title": "М/с 'Губка Боб Квадратные Штаны'.",
+              "category": "Детям",
+              "score": 0.7668775710886413,
+              "validation_hit": true,
+              "training_broadcasts": 9,
+              "title_category_variants": 639
+            },
+            {
+              "rank": 2,
+              "programme_id": "12001734",
+              "title": "М/с 'Волшебные покровители'.",
+              "category": "Детям",
+              "score": 0.759115054025442,
+              "validation_hit": true,
+              "training_broadcasts": 1,
+              "title_category_variants": 204
+            },
+            {
+              "rank": 3,
+              "programme_id": "12002856",
+              "title": "М/с 'Элвиннн!!! и бурундуки'.",
+              "category": "Детям",
+              "score": 0.7034187259116222,
+              "validation_hit": true,
+              "training_broadcasts": 5,
+              "title_category_variants": 211
+            },
+            {
+              "rank": 4,
+              "programme_id": "12002355",
+              "title": "М/с 'Кунг-фу панда: Удивительные легенды'.",
+              "category": "Детям",
+              "score": 0.6094459584592617,
+              "validation_hit": false,
+              "training_broadcasts": 0,
+              "title_category_variants": 93
+            },
+            {
+              "rank": 5,
+              "programme_id": "12001732",
+              "title": "М/с 'Пингвины из 'Мадагаскара'.",
+              "category": "Детям",
+              "score": 0.6068500946062971,
+              "validation_hit": true,
+              "training_broadcasts": 0,
+              "title_category_variants": 77
+            }
+          ]
+        },
+        "ppr": {
+          "ap_at_5": 0.76,
+          "hits_at_5": 4,
+          "recommendations": [
+            {
+              "rank": 1,
+              "programme_id": "12001682",
+              "title": "М/с 'Губка Боб Квадратные Штаны'.",
+              "category": "Детям",
+              "score": 0.040189979513136416,
+              "validation_hit": true,
+              "training_broadcasts": 9,
+              "title_category_variants": 639
+            },
+            {
+              "rank": 2,
+              "programme_id": "12002856",
+              "title": "М/с 'Элвиннн!!! и бурундуки'.",
+              "category": "Детям",
+              "score": 0.039595213456797,
+              "validation_hit": true,
+              "training_broadcasts": 5,
+              "title_category_variants": 211
+            },
+            {
+              "rank": 3,
+              "programme_id": "12001734",
+              "title": "М/с 'Волшебные покровители'.",
+              "category": "Детям",
+              "score": 0.039463852170223544,
+              "validation_hit": true,
+              "training_broadcasts": 1,
+              "title_category_variants": 204
+            },
+            {
+              "rank": 4,
+              "programme_id": "1000384",
+              "title": "Т/с 'Чисто английские убийства'.",
+              "category": "Сериалы",
+              "score": 0.03910289979761858,
+              "validation_hit": false,
+              "training_broadcasts": 1,
+              "title_category_variants": 23
+            },
+            {
+              "rank": 5,
+              "programme_id": "10001261",
+              "title": "Т/с 'Мыслить как преступник'.",
+              "category": "Сериалы",
+              "score": 0.039014778419373265,
+              "validation_hit": true,
+              "training_broadcasts": 2,
+              "title_category_variants": 185
+            }
+          ]
+        }
+      },
+      "validation_seen_in_training": 6,
+      "validation_unseen_in_training": 13,
+      "ppr_restart_mass_per_seen_item": 0.038461538461538464,
+      "ppr_scores_for_popular_five": {
+        "2400480": 0.0028719546272370907,
+        "240081": 0.0027645929646411805,
+        "6500479": 0.002502838938038016,
+        "2400508": 0.002519258973067049,
+        "2400467": 0.0024636366569439857
+      }
+    },
+    "targets": [
+      "12001682",
+      "10001261",
+      "12001734",
+      "12001732",
+      "12002753"
+    ],
+    "strict_training_counts": {
+      "90063314": 1,
+      "12001734": 1,
+      "12001682": 8,
+      "12002856": 4,
+      "10001261": 1,
+      "12002753": 2,
+      "12002771": 2
+    },
+    "recommendations": [
+      {
+        "user_id": "12383257635753044631",
+        "method": "popularity",
+        "rank": "1",
+        "programme_id": "2400480",
+        "title": "ТСН.",
+        "category": "Инфо",
+        "score": "4362",
+        "validation_hit": false,
+        "training_broadcasts": "0",
+        "title_category_variants": "4"
+      },
+      {
+        "user_id": "12383257635753044631",
+        "method": "popularity",
+        "rank": "2",
+        "programme_id": "240081",
+        "title": "Факты.",
+        "category": "Инфо",
+        "score": "4073",
+        "validation_hit": false,
+        "training_broadcasts": "0",
+        "title_category_variants": "4"
+      },
+      {
+        "user_id": "12383257635753044631",
+        "method": "popularity",
+        "rank": "3",
+        "programme_id": "6500479",
+        "title": "'Мир наизнанку'.",
+        "category": "Познавательное",
+        "score": "3610",
+        "validation_hit": false,
+        "training_broadcasts": "0",
+        "title_category_variants": "64"
+      },
+      {
+        "user_id": "12383257635753044631",
+        "method": "popularity",
+        "rank": "4",
+        "programme_id": "2400508",
+        "title": "Сегодня.",
+        "category": "Инфо",
+        "score": "3608",
+        "validation_hit": false,
+        "training_broadcasts": "0",
+        "title_category_variants": "2"
+      },
+      {
+        "user_id": "12383257635753044631",
+        "method": "popularity",
+        "rank": "5",
+        "programme_id": "2400467",
+        "title": "'Викна-Новости'.",
+        "category": "Инфо",
+        "score": "3538",
+        "validation_hit": false,
+        "training_broadcasts": "0",
+        "title_category_variants": "1"
+      },
+      {
+        "user_id": "12383257635753044631",
+        "method": "tuned_als",
+        "rank": "1",
+        "programme_id": "12001682",
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "score": "0.7668775710886413",
+        "validation_hit": true,
+        "training_broadcasts": "9",
+        "title_category_variants": "639"
+      },
+      {
+        "user_id": "12383257635753044631",
+        "method": "tuned_als",
+        "rank": "2",
+        "programme_id": "12001734",
+        "title": "М/с 'Волшебные покровители'.",
+        "category": "Детям",
+        "score": "0.759115054025442",
+        "validation_hit": true,
+        "training_broadcasts": "1",
+        "title_category_variants": "204"
+      },
+      {
+        "user_id": "12383257635753044631",
+        "method": "tuned_als",
+        "rank": "3",
+        "programme_id": "12002856",
+        "title": "М/с 'Элвиннн!!! и бурундуки'.",
+        "category": "Детям",
+        "score": "0.7034187259116222",
+        "validation_hit": false,
+        "training_broadcasts": "5",
+        "title_category_variants": "211"
+      },
+      {
+        "user_id": "12383257635753044631",
+        "method": "tuned_als",
+        "rank": "4",
+        "programme_id": "12002355",
+        "title": "М/с 'Кунг-фу панда: Удивительные легенды'.",
+        "category": "Детям",
+        "score": "0.6094459584592617",
+        "validation_hit": false,
+        "training_broadcasts": "0",
+        "title_category_variants": "93"
+      },
+      {
+        "user_id": "12383257635753044631",
+        "method": "tuned_als",
+        "rank": "5",
+        "programme_id": "12001732",
+        "title": "М/с 'Пингвины из 'Мадагаскара'.",
+        "category": "Детям",
+        "score": "0.6068500946062971",
+        "validation_hit": true,
+        "training_broadcasts": "0",
+        "title_category_variants": "77"
+      },
+      {
+        "user_id": "12383257635753044631",
+        "method": "selected_ppr",
+        "rank": 1,
+        "programme_id": "12001682",
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "score": 0.3165915626996342,
+        "training_broadcasts": 9,
+        "validation_hit": true
+      },
+      {
+        "user_id": "12383257635753044631",
+        "method": "selected_ppr",
+        "rank": 2,
+        "programme_id": "12002856",
+        "title": "М/с 'Элвиннн!!! и бурундуки'.",
+        "category": "Детям",
+        "score": 0.15858947798491826,
+        "training_broadcasts": 5,
+        "validation_hit": false
+      },
+      {
+        "user_id": "12383257635753044631",
+        "method": "selected_ppr",
+        "rank": 3,
+        "programme_id": "12002771",
+        "title": "М/с 'Черепашки-ниндзя'.",
+        "category": "Детям",
+        "score": 0.07930267148266244,
+        "training_broadcasts": 2,
+        "validation_hit": false
+      },
+      {
+        "user_id": "12383257635753044631",
+        "method": "selected_ppr",
+        "rank": 4,
+        "programme_id": "12002753",
+        "title": "М/с 'Санджей и Крейг'.",
+        "category": "Детям",
+        "score": 0.07917471540742427,
+        "training_broadcasts": 2,
+        "validation_hit": true
+      },
+      {
+        "user_id": "12383257635753044631",
+        "method": "selected_ppr",
+        "rank": 5,
+        "programme_id": "12001734",
+        "title": "М/с 'Волшебные покровители'.",
+        "category": "Детям",
+        "score": 0.040220256895804926,
+        "training_broadcasts": 1,
+        "validation_hit": true
+      }
+    ],
+    "ap": {
+      "popularity": 0.0,
+      "tuned_als": 0.52,
+      "selected_ppr": 0.42000000000000004
+    }
+  },
+  {
+    "history": {
+      "user_id": "1144723520235416096",
+      "training_broadcasts": 83,
+      "training_distinct_programmes": 77,
+      "validation_distinct_programmes": 15,
+      "training_category_broadcasts": {
+        "Фильмы": 68,
+        "Развлечения": 9,
+        "Инфо": 4,
+        "Познавательное": 1,
+        "Детям": 1
+      },
+      "history_top": [
+        {
+          "programme_id": "400355",
+          "title": "Киев днем и ночью, 5 сезон, 12 эп.",
+          "category": "Развлечения",
+          "qualifying_broadcasts": 2,
+          "overlap_minutes": 16.6,
+          "validation_hit": false
+        },
+        {
+          "programme_id": "700390",
+          "title": "Премьера. Суперинтуиция, 5 сезон, 10 эп. Леся Никитюк и Антон Савлепов.",
+          "category": "Развлечения",
+          "qualifying_broadcasts": 2,
+          "overlap_minutes": 79.28333333333333,
+          "validation_hit": false
+        },
+        {
+          "programme_id": "2400508",
+          "title": "Сегодня.",
+          "category": "Инфо",
+          "qualifying_broadcasts": 2,
+          "overlap_minutes": 20.4,
+          "validation_hit": false
+        },
+        {
+          "programme_id": "90016797",
+          "title": "Х/ф 'Криминальное чтиво'.",
+          "category": "Фильмы",
+          "qualifying_broadcasts": 2,
+          "overlap_minutes": 49.68333333333333,
+          "validation_hit": false
+        },
+        {
+          "programme_id": "90054713",
+          "title": "Х/ф 'Фрида'.",
+          "category": "Фильмы",
+          "qualifying_broadcasts": 2,
+          "overlap_minutes": 91.6,
+          "validation_hit": false
+        },
+        {
+          "programme_id": "90075147",
+          "title": "Х/ф 'Джанго освобожденный'.",
+          "category": "Фильмы",
+          "qualifying_broadcasts": 2,
+          "overlap_minutes": 67.06666666666666,
+          "validation_hit": false
+        },
+        {
+          "programme_id": "200352",
+          "title": "'Вечерний квартал'.",
+          "category": "Развлечения",
+          "qualifying_broadcasts": 1,
+          "overlap_minutes": 22.15,
+          "validation_hit": false
+        },
+        {
+          "programme_id": "200477",
+          "title": "'Завтрак. Выходной'.",
+          "category": "Развлечения",
+          "qualifying_broadcasts": 1,
+          "overlap_minutes": 8.666666666666666,
+          "validation_hit": false
+        }
+      ],
+      "methods": {
+        "popularity": {
+          "ap_at_5": 0.6,
+          "hits_at_5": 3,
+          "recommendations": [
+            {
+              "rank": 1,
+              "programme_id": "2400480",
+              "title": "ТСН.",
+              "category": "Инфо",
+              "score": 4362,
+              "validation_hit": true,
+              "training_broadcasts": 0,
+              "title_category_variants": 4
+            },
+            {
+              "rank": 2,
+              "programme_id": "240081",
+              "title": "Факты.",
+              "category": "Инфо",
+              "score": 4073,
+              "validation_hit": true,
+              "training_broadcasts": 0,
+              "title_category_variants": 4
+            },
+            {
+              "rank": 3,
+              "programme_id": "6500479",
+              "title": "'Мир наизнанку'.",
+              "category": "Познавательное",
+              "score": 3610,
+              "validation_hit": true,
+              "training_broadcasts": 0,
+              "title_category_variants": 64
+            },
+            {
+              "rank": 4,
+              "programme_id": "2400508",
+              "title": "Сегодня.",
+              "category": "Инфо",
+              "score": 3608,
+              "validation_hit": false,
+              "training_broadcasts": 2,
+              "title_category_variants": 2
+            },
+            {
+              "rank": 5,
+              "programme_id": "2400467",
+              "title": "'Викна-Новости'.",
+              "category": "Инфо",
+              "score": 3538,
+              "validation_hit": false,
+              "training_broadcasts": 1,
+              "title_category_variants": 1
+            }
+          ]
+        },
+        "tuned_als": {
+          "ap_at_5": 0.13,
+          "hits_at_5": 2,
+          "recommendations": [
+            {
+              "rank": 1,
+              "programme_id": "700389",
+              "title": "Кто сверху?, 7 сезон, 5 эп.",
+              "category": "Развлечения",
+              "score": 0.5710241382784842,
+              "validation_hit": false,
+              "training_broadcasts": 1,
+              "title_category_variants": 34
+            },
+            {
+              "rank": 2,
+              "programme_id": "1000589",
+              "title": "Т/с 'Отчаянные домохозяйки', 1 сезон, 10 с. 'Возвращайся'.",
+              "category": "Сериалы",
+              "score": 0.5082731894971463,
+              "validation_hit": false,
+              "training_broadcasts": 0,
+              "title_category_variants": 90
+            },
+            {
+              "rank": 3,
+              "programme_id": "400363",
+              "title": "От пацанки до панянки, 4 сезон, 10 эп.",
+              "category": "Развлечения",
+              "score": 0.4831667178631506,
+              "validation_hit": false,
+              "training_broadcasts": 1,
+              "title_category_variants": 21
+            },
+            {
+              "rank": 4,
+              "programme_id": "2400480",
+              "title": "ТСН.",
+              "category": "Инфо",
+              "score": 0.4673380668765048,
+              "validation_hit": true,
+              "training_broadcasts": 0,
+              "title_category_variants": 4
+            },
+            {
+              "rank": 5,
+              "programme_id": "6500479",
+              "title": "'Мир наизнанку'.",
+              "category": "Познавательное",
+              "score": 0.45191811579011854,
+              "validation_hit": true,
+              "training_broadcasts": 0,
+              "title_category_variants": 64
+            }
+          ]
+        },
+        "ppr": {
+          "ap_at_5": 0.0,
+          "hits_at_5": 0,
+          "recommendations": [
+            {
+              "rank": 1,
+              "programme_id": "2400508",
+              "title": "Сегодня.",
+              "category": "Инфо",
+              "score": 0.008904770677887535,
+              "validation_hit": false,
+              "training_broadcasts": 2,
+              "title_category_variants": 2
+            },
+            {
+              "rank": 2,
+              "programme_id": "2400467",
+              "title": "'Викна-Новости'.",
+              "category": "Инфо",
+              "score": 0.008878924613709063,
+              "validation_hit": false,
+              "training_broadcasts": 1,
+              "title_category_variants": 1
+            },
+            {
+              "rank": 3,
+              "programme_id": "200352",
+              "title": "'Вечерний квартал'.",
+              "category": "Развлечения",
+              "score": 0.008535050149795907,
+              "validation_hit": false,
+              "training_broadcasts": 1,
+              "title_category_variants": 4
+            },
+            {
+              "rank": 4,
+              "programme_id": "700389",
+              "title": "Кто сверху?, 7 сезон, 5 эп.",
+              "category": "Развлечения",
+              "score": 0.008454489343281423,
+              "validation_hit": false,
+              "training_broadcasts": 1,
+              "title_category_variants": 34
+            },
+            {
+              "rank": 5,
+              "programme_id": "6000483",
+              "title": "'Свадьба вслепую', 6 сезон, 7 эп.",
+              "category": "Развлечения",
+              "score": 0.008071544065074267,
+              "validation_hit": false,
+              "training_broadcasts": 1,
+              "title_category_variants": 27
+            }
+          ]
+        }
+      },
+      "validation_seen_in_training": 1,
+      "validation_unseen_in_training": 14,
+      "ppr_restart_mass_per_seen_item": 0.006493506493506494,
+      "ppr_scores_for_popular_five": {
+        "2400480": 0.0027613048956157326,
+        "240081": 0.002682500996999824,
+        "6500479": 0.0024501767640497216,
+        "2400508": 0.008904770677887535,
+        "2400467": 0.008878924613709063
+      }
+    },
+    "targets": [
+      "500315",
+      "90081170"
+    ],
+    "strict_training_counts": {
+      "90061213": 1,
+      "90082214": 1,
+      "90071986": 1,
+      "90079815": 1,
+      "90062194": 1
+    },
+    "recommendations": [
+      {
+        "user_id": "1144723520235416096",
+        "method": "popularity",
+        "rank": "1",
+        "programme_id": "2400480",
+        "title": "ТСН.",
+        "category": "Инфо",
+        "score": "4362",
+        "validation_hit": false,
+        "training_broadcasts": "0",
+        "title_category_variants": "4"
+      },
+      {
+        "user_id": "1144723520235416096",
+        "method": "popularity",
+        "rank": "2",
+        "programme_id": "240081",
+        "title": "Факты.",
+        "category": "Инфо",
+        "score": "4073",
+        "validation_hit": false,
+        "training_broadcasts": "0",
+        "title_category_variants": "4"
+      },
+      {
+        "user_id": "1144723520235416096",
+        "method": "popularity",
+        "rank": "3",
+        "programme_id": "6500479",
+        "title": "'Мир наизнанку'.",
+        "category": "Познавательное",
+        "score": "3610",
+        "validation_hit": false,
+        "training_broadcasts": "0",
+        "title_category_variants": "64"
+      },
+      {
+        "user_id": "1144723520235416096",
+        "method": "popularity",
+        "rank": "4",
+        "programme_id": "2400508",
+        "title": "Сегодня.",
+        "category": "Инфо",
+        "score": "3608",
+        "validation_hit": false,
+        "training_broadcasts": "2",
+        "title_category_variants": "2"
+      },
+      {
+        "user_id": "1144723520235416096",
+        "method": "popularity",
+        "rank": "5",
+        "programme_id": "2400467",
+        "title": "'Викна-Новости'.",
+        "category": "Инфо",
+        "score": "3538",
+        "validation_hit": false,
+        "training_broadcasts": "1",
+        "title_category_variants": "1"
+      },
+      {
+        "user_id": "1144723520235416096",
+        "method": "tuned_als",
+        "rank": "1",
+        "programme_id": "700389",
+        "title": "Кто сверху?, 7 сезон, 5 эп.",
+        "category": "Развлечения",
+        "score": "0.5710241382784842",
+        "validation_hit": false,
+        "training_broadcasts": "1",
+        "title_category_variants": "34"
+      },
+      {
+        "user_id": "1144723520235416096",
+        "method": "tuned_als",
+        "rank": "2",
+        "programme_id": "1000589",
+        "title": "Т/с 'Отчаянные домохозяйки', 1 сезон, 10 с. 'Возвращайся'.",
+        "category": "Сериалы",
+        "score": "0.5082731894971463",
+        "validation_hit": false,
+        "training_broadcasts": "0",
+        "title_category_variants": "90"
+      },
+      {
+        "user_id": "1144723520235416096",
+        "method": "tuned_als",
+        "rank": "3",
+        "programme_id": "400363",
+        "title": "От пацанки до панянки, 4 сезон, 10 эп.",
+        "category": "Развлечения",
+        "score": "0.4831667178631506",
+        "validation_hit": false,
+        "training_broadcasts": "1",
+        "title_category_variants": "21"
+      },
+      {
+        "user_id": "1144723520235416096",
+        "method": "tuned_als",
+        "rank": "4",
+        "programme_id": "2400480",
+        "title": "ТСН.",
+        "category": "Инфо",
+        "score": "0.4673380668765048",
+        "validation_hit": false,
+        "training_broadcasts": "0",
+        "title_category_variants": "4"
+      },
+      {
+        "user_id": "1144723520235416096",
+        "method": "tuned_als",
+        "rank": "5",
+        "programme_id": "6500479",
+        "title": "'Мир наизнанку'.",
+        "category": "Познавательное",
+        "score": "0.45191811579011854",
+        "validation_hit": false,
+        "training_broadcasts": "0",
+        "title_category_variants": "64"
+      },
+      {
+        "user_id": "1144723520235416096",
+        "method": "selected_ppr",
+        "rank": 1,
+        "programme_id": "90061213",
+        "title": "Х/ф 'Фантастическая четверка (2005)'.",
+        "category": "Фильмы",
+        "score": 0.15020289273991094,
+        "training_broadcasts": 1,
+        "validation_hit": false
+      },
+      {
+        "user_id": "1144723520235416096",
+        "method": "selected_ppr",
+        "rank": 2,
+        "programme_id": "90079815",
+        "title": "Х/ф 'Крутые меры'.",
+        "category": "Фильмы",
+        "score": 0.15016613005644422,
+        "training_broadcasts": 1,
+        "validation_hit": false
+      },
+      {
+        "user_id": "1144723520235416096",
+        "method": "selected_ppr",
+        "rank": 3,
+        "programme_id": "90071986",
+        "title": "Х/ф 'Солт'.",
+        "category": "Фильмы",
+        "score": 0.15010424001945671,
+        "training_broadcasts": 1,
+        "validation_hit": false
+      },
+      {
+        "user_id": "1144723520235416096",
+        "method": "selected_ppr",
+        "rank": 4,
+        "programme_id": "90082214",
+        "title": "Х/ф 'Ужастики 2. Призраки Хэллоуина'.",
+        "category": "Фильмы",
+        "score": 0.15009602099812572,
+        "training_broadcasts": 1,
+        "validation_hit": false
+      },
+      {
+        "user_id": "1144723520235416096",
+        "method": "selected_ppr",
+        "rank": 5,
+        "programme_id": "90062194",
+        "title": "Премьера. Х/ф 'Цена измены'.",
+        "category": "Фильмы",
+        "score": 0.1500288969330957,
+        "training_broadcasts": 1,
+        "validation_hit": false
+      }
+    ],
+    "ap": {
+      "popularity": 0.0,
+      "tuned_als": 0.0,
+      "selected_ppr": 0.0
+    }
+  }
+]

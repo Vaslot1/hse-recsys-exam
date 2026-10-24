@@ -1,0 +1,61 @@
+{
+  "counter_note": "Source-quality checks precede window clipping. Their counts repeat across partitions and must not be summed.",
+  "partitions": {
+    "train": {
+      "window_start_inclusive": "2020-03-09T00:00:00",
+      "window_end_exclusive": "2020-05-18T00:00:00",
+      "matching_seconds": 303.958,
+      "audit": {
+        "view_rows_read": 5821987,
+        "duplicate_view_rows": 17,
+        "unique_view_rows": 5821970,
+        "duration_mismatch_rows": 117,
+        "over_24h_view_rows": 52,
+        "nonpositive_view_rows": 0,
+        "mismatch_and_over_24h_rows": 1,
+        "excluded_view_rows": 168,
+        "outside_window_view_rows": 1876763,
+        "view_rows_used": 3945039,
+        "merged_view_intervals": 3677221,
+        "schedule_rows_read": 2148629,
+        "duplicate_airings": 0,
+        "nonpositive_broadcast_rows": 1,
+        "outside_window_broadcast_rows": 1076884,
+        "unlabelled_broadcast_rows": 956428,
+        "conflicting_schedule_seconds": 1800,
+        "positive_overlap_broadcasts": 1823678,
+        "below_threshold_broadcasts": 590572,
+        "matched_broadcasts": 1233106,
+        "matched_users": 4833
+      }
+    },
+    "validation": {
+      "window_start_inclusive": "2020-05-18T00:00:00",
+      "window_end_exclusive": "2020-07-27T00:00:00",
+      "matching_seconds": 278.775,
+      "audit": {
+        "view_rows_read": 5821987,
+        "duplicate_view_rows": 17,
+        "unique_view_rows": 5821970,
+        "duration_mismatch_rows": 117,
+        "over_24h_view_rows": 52,
+        "nonpositive_view_rows": 0,
+        "mismatch_and_over_24h_rows": 1,
+        "excluded_view_rows": 168,
+        "outside_window_view_rows": 3944032,
+        "view_rows_used": 1877770,
+        "merged_view_intervals": 1765405,
+        "schedule_rows_read": 2148629,
+        "duplicate_airings": 0,
+        "nonpositive_broadcast_rows": 1,
+        "outside_window_broadcast_rows": 1073984,
+        "unlabelled_broadcast_rows": 953057,
+        "conflicting_schedule_seconds": 0,
+        "positive_overlap_broadcasts": 1190411,
+        "below_threshold_broadcasts": 331197,
+        "matched_broadcasts": 859214,
+        "matched_users": 4799
+      }
+    }
+  }
+}

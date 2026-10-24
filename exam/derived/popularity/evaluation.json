@@ -1,0 +1,58 @@
+{
+  "method": "distinct_training_user_popularity",
+  "metric": "MAP@5",
+  "ground_truth": "Local qualifying-watch proxy; not asserted equivalent to Kaggle hidden labels.",
+  "empty_target_policy": "AP@5 = 0; include in the primary cohort denominator.",
+  "repeat_policy": "Previously watched programmes allowed; five distinct IDs per list.",
+  "training_match_rows": 1233106,
+  "training_users": 4833,
+  "training_programmes": 2901,
+  "candidate_programmes": 6384,
+  "zero_support_candidates": 4222,
+  "validation_match_rows": 859214,
+  "validation_match_rows_in_cohort": 300961,
+  "relevant_user_item_pairs": 162418,
+  "cold_item_relevant_pairs": 55818,
+  "top_five": [
+    "2400480",
+    "240081",
+    "6500479",
+    "2400508",
+    "2400467"
+  ],
+  "cohorts": {
+    "all_users": {
+      "users": 1260,
+      "empty_target_users": 14,
+      "map_at_5": 0.7293994708994709
+    },
+    "nonempty_targets": {
+      "users": 1246,
+      "empty_target_users": 0,
+      "map_at_5": 0.7375949705724987
+    },
+    "warm_users": {
+      "users": 1250,
+      "empty_target_users": 12,
+      "map_at_5": 0.7319466666666666
+    },
+    "cold_start_users": {
+      "users": 10,
+      "empty_target_users": 2,
+      "map_at_5": 0.41100000000000003
+    }
+  },
+  "training_window": {
+    "start_inclusive": "2020-03-09T00:00:00",
+    "end_exclusive": "2020-05-18T00:00:00"
+  },
+  "validation_window": {
+    "start_inclusive": "2020-05-18T00:00:00",
+    "end_exclusive": "2020-07-27T00:00:00"
+  },
+  "evaluation_seconds": 56.722,
+  "inputs": {
+    "source_directory": "D:\\Projects\\hse-recsys\\exam\\dataset-sweet-tv",
+    "matching_directory": "D:\\Projects\\hse-recsys\\exam\\derived\\matching"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "method": "ppr_counts_050",
+  "metric": "MAP@5",
+  "label_definition": "frozen_coverage80_top5",
+  "parameters": {
+    "damping": 0.5,
+    "tolerance": 1e-10,
+    "max_iterations": 200
+  },
+  "restart_weighting": "watch_counts",
+  "cohorts": {
+    "all_users": {
+      "users": 1260,
+      "empty_target_users": 22,
+      "relevant_user_item_pairs": 6005,
+      "map_at_5": 0.34712037037037036
+    },
+    "at_least_five_coverage80": {
+      "users": 1150,
+      "empty_target_users": 0,
+      "relevant_user_item_pairs": 5750,
+      "map_at_5": 0.3676057971014493
+    }
+  }
+}
